@@ -1,3 +1,7 @@
+"""
+Author: Vahid K.
+"""
+
 import cv2
 import os
 import numpy as np
@@ -91,8 +95,10 @@ class ImageProcessing:
         imCanny = cv2.Canny(nlm, 85, 155)
         return imCanny
 
+# NOTE: REPLACE with relevant path
+filterPath = r"path\to\filter\image.jpeg"
 
-imgProc = ImageProcessing(r"MicroplasticAnalysis/RawImages/IMG_9913.jpg")
+imgProc = ImageProcessing(filterPath)
 img = imgProc.getContours()
 imgProc.showImage(img)
 imgProc.saveImage(img, "ProcessedImg.jpg", "MicroplasticAnalysis/RawImages")

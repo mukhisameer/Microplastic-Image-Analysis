@@ -1,0 +1,4 @@
+files are too large to include in repo, so here are the links to the relevant resources
+
+sample-spectra: https://drive.google.com/drive/folders/1cnw7gWDjFbpLAjL46T1NYaAqe7-Uienm (place in specA, specB, etc...)
+raman-reference: https://openanalysis.org/openspecy/ (place in raman-ref)
