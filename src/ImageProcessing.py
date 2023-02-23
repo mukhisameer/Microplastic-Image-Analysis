@@ -95,10 +95,5 @@ class ImageProcessing:
         imCanny = cv2.Canny(nlm, 85, 155)
         return imCanny
 
-# NOTE: REPLACE with relevant path
-filterPath = r"path\to\filter\image.jpeg"
 
-imgProc = ImageProcessing(filterPath)
-img = imgProc.getContours()
-imgProc.showImage(img)
-imgProc.saveImage(img, "ProcessedImg.jpg", "MicroplasticAnalysis/RawImages")
+# NOTE: This file is also used in the "web/app.py". To test this code use "ImageProcessingTest.py"
