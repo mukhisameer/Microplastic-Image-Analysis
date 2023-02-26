@@ -61,12 +61,14 @@
                     <input type="submit" value="Upload" class="btn btn-primary" id="submitforanalysis">
                 </div>
             </form>
-
-        </div>
-        <div class="row">
             <div>
                 {% if file_name!=null and file_name!='' %}
-                <span><a href="{{url_for('download_file',file_name=file_name)}}"" >Download the analyzed file!</a>    </span>
+                <div class="img-container">
+                    <img src="{{url_for('download_file',file_name=file_name)}}" alt="Analyzed Image" class="image" style="width:100%">
+                    <div class="middle">
+                        <span class="text"><a href="{{url_for('download_file',file_name=file_name)}}" >Download File</a>    </span>
+                    </div> 
+                  </div>
                 {% endif %}
             </div>
         </div>
